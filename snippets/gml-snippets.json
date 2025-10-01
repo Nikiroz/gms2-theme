@@ -1,42 +1,127 @@
 {
+  "GML block": {
+    "prefix": "gml-block",
+    "body": [
+      "{",
+      "\t${1:// code here}",
+      "}"
+    ],
+    "description": "gml block"
+  },
   "GML if": {
     "prefix": "if",
     "body": [
-      "if (${1}){",
-      "\t$0// code here",
+      "if(${1:condition}){",
+      "\t${2:// code here}",
       "}"
-    ],
-    "description": "If"
+    ]
   },
   "GML if-else": {
     "prefix": "if-else",
     "body": [
-      "if (${1}){",
-      "\t$0// code here",
+      "if(${1:condition}){",
+      "\t${2:// code here}",
       "}",
-      "else {",
-      "\t$0// code here",
+      "else{",
+      "\t${3:// code here}",
       "}"
-    ],
-    "description": "If-Else"
+    ]
   },
   "GML for-loop": {
     "prefix": "for-loop",
     "body": [
-      "for (var i = 0; i < ${1}; i++) {",
-      "\t$0// code here",
+      "for(var i = 0; i < ${1}; i++){",
+      "\t${2:// code here}",
       "}"
     ],
-    "description": "For Loop"
+    "description": "for(var i = 0; i < ${1}; i++){"
   },
   "GML for-loop reverce": {
     "prefix": "for-loop-reverce",
     "body": [
-      "for (var i = ${1}; i > 0; i--) {",
-      "\t$0",
+      "for(var i = ${1}; i > 0; i--){",
+      "\t${2:// code here}",
       "}"
     ],
-    "description": "For Loop reverce"
+    "description": "for(var i = ${1}; i > 0; i--){"
+  },
+  "GML while-loop": {
+    "prefix": "while-loop",
+    "body": [
+      "while(${1:expression}){",
+      "\t${2:// code here}",
+      "}"
+    ]
+  },
+  "GML do-until": {
+    "prefix": "do-until",
+    "body": [
+      "do{",
+      "\t${1:// code here}",
+      "}until (${2:condition});"
+    ],
+    "description": "do{${1}}until (${2:condition});"
+  },
+  "GML repeat": {
+    "prefix": "repeat",
+    "body": [
+      "repeat(${1:expression}){",
+      "\t${2:// code here}",
+      "}"
+    ],
+    "description": "repeat(${1:expression}){"
+  },
+  "GML switch": {
+    "prefix": "switch",
+    "body": [
+      "switch(${1:expression}){",
+      "\tcase ${2:constant}:",
+      "\t\t${3:// code here}",
+      "\t\tbreak;",
+      "\tcase default:",
+      "\t\t${4:// code here}",
+      "\t\tbreak;",
+      "}"
+    ],
+    "description": "switch(${1:expression}){"
+  },
+  "GML with": {
+    "prefix": "with",
+    "body": [
+      "with(${1:expression}){",
+      "\t${2:// code here}",
+      "}"
+    ]
+  },
+  "GML comment": {
+    "prefix": "comment",
+    "body": [
+      "${1:// comment here}"
+    ]
+  },
+  "GML multi-line comment": {
+    "prefix": "multi-line comment",
+    "body": [
+      "/*",
+      "\t${1:// comment here}",
+      "*/"
+    ]
+  },
+  "GML region": {
+    "prefix": "region",
+    "body": [
+      "#region",
+      "\t${1:// comment here}",
+      "#endregion"
+    ]
+  },
+  "GML array sort": {
+    "prefix": "array sort",
+    "body": [
+      "array_sort(${1:array}, function(elm1, elm2){",
+      "\t return elm1 - elm2;",
+      "}"
+    ]
   },
   "GML Script Template": {
     "prefix": "new-gml-script",
@@ -50,6 +135,6 @@
       "\t$0return ${2:returnValue};",
       "}"
     ],
-    "description": "New GML script template"
+    "description": "Create a new GML script with JSDoc description"
   }
 }

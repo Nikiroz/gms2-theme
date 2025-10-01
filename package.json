@@ -14,7 +14,8 @@
   },
   "categories": [
     "Themes",
-    "Snippets"
+    "Snippets",
+    "Keymaps"
   ],
   "icon": "icon.png",
   "contributes": {
@@ -28,7 +29,7 @@
     "snippets": [
       {
         "language": "gml",
-        "path": "./snippets/gml.code-snippets.json"
+        "path": "./snippets/gml-snippets.json"
       }
     ],
     "grammars": [
@@ -41,6 +42,128 @@
         "language": "gml",
         "scopeName": "source.gml",
         "path": "./syntaxes/gml.tmLanguage.json"
+      }
+    ],
+    "keybindings": [
+      {
+        "key": "f4 f4",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus"
+      },
+      {
+        "key": "f4 1",
+        "command": "editor.action.insertSnippet",
+        "args": {
+          "name": "GML block"
+        },
+        "when": "editorTextFocus"
+      },
+      {
+        "key": "f4 2",
+        "command": "editor.action.insertSnippet",
+        "args": {
+          "name": "GML if"
+        },
+        "when": "editorTextFocus"
+      },
+      {
+        "key": "f4 3",
+        "command": "editor.action.insertSnippet",
+        "args": {
+          "name": "GML if-else"
+        },
+        "when": "editorTextFocus"
+      },
+      {
+        "key": "f4 4",
+        "command": "editor.action.insertSnippet",
+        "args": {
+          "name": "GML for-loop reverce"
+        },
+        "when": "editorTextFocus"
+      },
+      {
+        "key": "f4 5",
+        "command": "editor.action.insertSnippet",
+        "args": {
+          "name": "GML for-loop"
+        },
+        "when": "editorTextFocus"
+      },
+      {
+        "key": "f4 6",
+        "command": "editor.action.insertSnippet",
+        "args": {
+          "name": "GML while-loop"
+        },
+        "when": "editorTextFocus"
+      },
+      {
+        "key": "f4 7",
+        "command": "editor.action.insertSnippet",
+        "args": {
+          "name": "GML do-until"
+        },
+        "when": "editorTextFocus"
+      },
+      {
+        "key": "f4 8",
+        "command": "editor.action.insertSnippet",
+        "args": {
+          "name": "GML repeat"
+        },
+        "when": "editorTextFocus"
+      },
+      {
+        "key": "f4 9",
+        "command": "editor.action.insertSnippet",
+        "args": {
+          "name": "GML switch"
+        },
+        "when": "editorTextFocus"
+      },
+      {
+        "key": "f4 c",
+        "command": "editor.action.insertSnippet",
+        "args": {
+          "name": "GML comment"
+        },
+        "when": "editorTextFocus"
+      },
+      {
+        "key": "f4 m",
+        "command": "editor.action.insertSnippet",
+        "args": {
+          "name": "GML multi-line comment"
+        },
+        "when": "editorTextFocus"
+      },
+      {
+        "key": "f4 r",
+        "command": "editor.action.insertSnippet",
+        "args": {
+          "name": "GML region"
+        },
+        "when": "editorTextFocus"
+      },
+      {
+        "key": "f4 s",
+        "command": "editor.action.insertSnippet",
+        "args": {
+          "name": "GML array sort"
+        },
+        "when": "editorTextFocus"
+      },
+
+      {
+        "key": "ctrl+k",
+        "command": "editor.action.commentLine",
+        "when": "editorTextFocus && editorHasSelection"
+      },
+      {
+        "key": "ctrl+shift+k",
+        "command": "editor.action.removeCommentLine",
+        "when": "editorTextFocus && editorHasSelection"
       }
     ]
   }
