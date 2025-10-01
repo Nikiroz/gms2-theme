@@ -119,7 +119,7 @@
     "prefix": "array sort",
     "body": [
       "array_sort(${1:array}, function(elm1, elm2){",
-      "\t return elm1 - elm2;",
+      "\treturn elm1 - elm2;",
       "}"
     ]
   },
