@@ -1,0 +1,47 @@
+{
+  "name": "gms2-theme",
+  "displayName": "GameMaker studio 2 theme",
+  "description": "GameMaker Studio 2 colors for VSCode",
+  "publisher": "nibel",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "*"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Nikiroz/gms2-theme/"
+  },
+  "categories": [
+    "Themes",
+    "Snippets"
+  ],
+  "icon": "icon.png",
+  "contributes": {
+    "themes": [
+      {
+        "label": "GameMaker Studio 2 Theme",
+        "uiTheme": "vs-dark",
+        "path": "./themes/gms2-theme.json"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "gml",
+        "path": "./snippets/gml.code-snippets.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "yy",
+        "scopeName": "source.yyp",
+        "path": "./syntaxes/yyp.tmLanguage.json"
+      },
+      {
+        "language": "gml",
+        "scopeName": "source.gml",
+        "path": "./syntaxes/gml.tmLanguage.json"
+      }
+    ]
+  }
+}

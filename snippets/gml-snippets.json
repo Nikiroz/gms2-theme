@@ -1,0 +1,55 @@
+{
+  "GML if": {
+    "prefix": "if",
+    "body": [
+      "if (${1}){",
+      "\t$0// code here",
+      "}"
+    ],
+    "description": "If"
+  },
+  "GML if-else": {
+    "prefix": "if-else",
+    "body": [
+      "if (${1}){",
+      "\t$0// code here",
+      "}",
+      "else {",
+      "\t$0// code here",
+      "}"
+    ],
+    "description": "If-Else"
+  },
+  "GML for-loop": {
+    "prefix": "for-loop",
+    "body": [
+      "for (var i = 0; i < ${1}; i++) {",
+      "\t$0// code here",
+      "}"
+    ],
+    "description": "For Loop"
+  },
+  "GML for-loop reverce": {
+    "prefix": "for-loop-reverce",
+    "body": [
+      "for (var i = ${1}; i > 0; i--) {",
+      "\t$0",
+      "}"
+    ],
+    "description": "For Loop reverce"
+  },
+  "GML Script Template": {
+    "prefix": "new-gml-script",
+    "body": [
+      "/// @function ${${TM_FILENAME_BASE}}(${1:arg1})",
+      "/// @description Description",
+      "/// @param{Real} ${1:arg1}",
+      "/// @returns{Real}",
+      "",
+      "function ${TM_FILENAME_BASE}(${1:arg1}){",
+      "\t$0return ${2:returnValue};",
+      "}"
+    ],
+    "description": "New GML script template"
+  }
+}
