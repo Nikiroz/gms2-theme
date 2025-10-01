@@ -116,7 +116,7 @@
         "keyword.operator.alignas",
         "keyword.operator.instanceof",
         "keyword.operator.wordlike",
-        "keyword.operator.arithmetic.gml",
+        "keyword.operator.arithmetic.mod.gml",
         "storage.type.gml",
         "storage.type.function.gml",
         "function.defaultLibrary",

@@ -122,7 +122,11 @@
             "patterns": [
                 {
                     "name": "keyword.operator.arithmetic.gml",
-                    "match": "([-+*/%]|\\b(mod|div)\\b)"
+                    "match": "([-+*/%])"
+                },
+                {
+                    "name": "keyword.operator.arithmetic.mod.gml",
+                    "match": "(\\b(mod|div)\\b)"
                 },
                 {
                     "name": "keyword.operator.comparison.gml",
